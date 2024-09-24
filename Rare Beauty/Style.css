@@ -1,0 +1,1253 @@
+/* início*/
+
+* {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: pink;
+}
+
+
+img {
+    padding: 20px;
+}
+
+.suporte {
+    display: flex;
+    align-items: center;
+    height: 200px;
+}
+
+.suportecliente {
+    display: flex;
+    align-items: center;
+    color: palevioletred;
+    padding-right: 50px;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 300px;
+}
+
+.alinhar {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding-left: 300px;
+}
+
+/*Barrinha*/
+
+.menuh {
+    list-style: none;
+    padding: 20px 0px 20px 0px;
+    background-color: palevioletred;
+    display: flex;
+    align-items: center;
+}
+
+.menuh li {
+    display: inline;
+}
+
+.menuh li a {
+    color: pink;
+    padding: 10px;
+    display: flex;
+    display: inline;
+    font-size: 1.3rem;
+    color:pink ;
+    font-weight: 600;
+    text-decoration: none;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.menuh a::after {
+    content: '';
+    width: 3.5rem;
+    height: 1px;
+    background-color: pink ;
+    position: absolute;
+    bottom: -3px;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    opacity: 0;
+    transition: all 0.3 ease;
+}
+
+.menuh a:hover::after {
+    opacity: 1;
+}
+
+.menuh a:hover {
+color: plum;
+}
+
+/*Imagem de fundo*/
+
+.banner {
+    background-image: linear-gradient(100deg, #000000, #00000020), url('fotos/3.jpg');
+    height: 700px;
+    background-size: cover;
+    right: 150px;
+    padding: 200px 650px 0px 10px;
+    background-position: center;
+}
+
+.txtbanner {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.txtbanner p {
+    color: palevioletred;
+   font-size: 1.2rem;
+    margin-bottom: 1rem;
+   font-weight: 500;
+}
+
+.txtbanner h2 {
+    color:palevioletred;
+    font-size: 2.5rem;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+.txtbanner a {
+    margin-top: 2rem;
+    text-decoration: none;
+    color: palevioletred;
+    background-color: white;
+    display: inline-block;
+    padding: 1rem 3rem;
+    border-radius: 3rem;
+}
+
+.txtbanner a:hover{
+    background-color: plum;
+    color: pink;
+}
+
+/**/
+
+.heading-1 {
+    text-align: center;
+    font-weight: 500;
+    font-size: 3rem;
+    color: rgb(255, 255, 255);
+}
+
+.conteiner-produtos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    margin: 0px 50px 50px 50px;
+}
+
+.card-product {
+    background-color: rgb(0, 0, 0);
+    padding: 1.5rem 2rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+
+.conteiner-img {
+    position: relative;
+}
+
+.conteiner-img img {
+    width: 100%;
+}
+
+.conteiner-img .discount {
+    position: absolute;
+    left: 0;
+    color: #ffffff;
+    padding: 2px 1.2rem;
+    border-radius: 1rem;
+    font-size: 1.2rem;
+}
+
+.card-product:hover .discount {
+    background-color: #ffffff;
+}
+
+.titulosobre {
+    font-size: 40px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+.just {
+    display: flex;
+    justify-items: center;
+    padding: 50px 150px 50px 150px;
+}
+
+.texto {
+    font-size: 14px;
+    text-align: justify;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    color: rgb(255, 255, 255);
+}
+
+.heading-1 {
+    text-align: center;
+    font-weight: 500;
+    font-size: 3rem;
+    color: rgb(255, 255, 255);
+}
+
+.conteiner-produtos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    margin: 0px 50px 50px 50px;
+}
+
+.card-product {
+    background-color: rgb(255, 255, 255);
+    padding: 1.5rem 2rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    box-shadow: 0 0 2px rgba(255, 0, 0, 0.1);
+    width: 100%;
+}
+
+.conteiner-img {
+    position: relative;
+}
+
+.conteiner-img img {
+    width: 100%;
+}
+
+.conteiner-img .discount {
+    position: absolute;
+    left: 0;
+    color: #fff;
+    padding: 2px 1.2rem;
+    border-radius: 1rem;
+    font-size: 1.2rem;
+}
+
+.card-product:hover .discount {
+    background-color: #000;
+}
+
+
+.button-group {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    position: absolute;
+    top: 0;
+    right: -3rem;
+    z-index: -1;
+    transition: all 0.4s ease;
+}
+
+.button-group span {
+    border: 1px solid burlywood;
+    padding: 0.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+
+.button-group span:hover {
+    background-color: burlywood;
+}
+
+.button-group span i {
+    font-size: 1.5rem;
+    color: rgb(0, 0, 0);
+}
+
+.button-group span:hover i {
+    color: #fff;
+}
+
+.card-product:hover .button-group {
+    z-index: 0;
+    right: -1rem;
+}
+
+/*Quadradinhos*/
+
+.main-conteudo {
+    background-color: pink;
+}
+
+.aling {
+    display: flex;
+    grid-template-columns: repeat(4 1fr);
+    gap: 3rem;
+    padding: 3rem 0;
+}
+
+.base-conteudo {
+    display: flex;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 3rem;
+    padding: 3rem 0;
+    
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    border-radius: 1rem;
+    gap: 1.5rem;
+    width: 250px;
+    background-color: rgb(243, 226, 229);
+    padding: 1.0rem 0;
+    box-shadow: 10px 5px 5px plum;
+}
+
+.conteudo {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.conteudo span {
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: palevioletred;
+}
+
+.conteudo p {
+    color: palevioletred;
+    font-weight: 400;
+}
+
+/*Sobre*/
+
+.titulosobre {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 40px;
+    text-align: center;
+    color: palevioletred;
+}
+
+.just {
+    display: flex;
+    justify-items: center;
+    padding: 50px 150px 50px 150px;
+}
+
+.texto {
+    font-size: 15px;
+    text-align: justify;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    color: palevioletred;
+}
+
+/*Destaques*/
+
+.tipos {
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+	margin-bottom: 3rem;
+}
+
+.container-categoria{
+    display: flex;    
+    grid-template-columns: repeat(3, 1fr);
+    gap:3rem;
+} 
+
+.card-categoria{
+    height: 10rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2rem;
+    gap: 1rem;
+}
+
+.categoria-maquiagem1{
+    background-image: linear-gradient(#00000000, #00000080), url('Imagens/maquiagem\ 1.jpg');
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    width: 400px;
+    height: 400px;
+}
+
+.categoria-maquiagem1 a{
+    text-decoration: none;
+}
+
+.categoria-maquiagem2{
+    background-image: linear-gradient(#00000000, #00000080), url('Imagens/maquiagem\ 2.jpg');
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    width: 400px;
+    height: 400px;
+}
+.categoria-maquiagem2 a{
+    text-decoration: none;
+}
+
+.categoria-maquiagem3{
+    background-image: linear-gradient(#00000000, #00000080), url('Imagens/Maquiagem\ 3.jpg');
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    width: 400px;
+    height: 400px;
+}
+
+.categoria-maquiagem3 a{
+    text-decoration: none;
+}
+
+.card-categoria p{
+    font-size: 2.5rem;
+    color: pink;
+    text-transform: capitalize;
+    position: relative;
+}
+
+.card-categoria p::after{
+    content:'';
+    width: 3.5rem;
+    height: 2px;
+    background-color: palevioletred;
+    position: absolute;
+    bottom: -1rem;
+    left: 50%;
+    transform: translate(-50%, 50%);
+
+}
+
+.card-categoria span
+{
+    font-size: 1.6rem;
+    color: pink;
+    cursor:  pointer;
+}
+
+.card-categoria span:hover{
+    color: palevioletred;
+}
+
+.bannerr {
+    background-image: url('fotos/4.jpg');
+    height: 700px;
+    background-size: cover;
+    right: 150px;
+    padding: 200px 650px 0px 10px;
+    background-position: center;
+}
+
+.txtbannerr {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.txtbannerr p {
+    color: palevioletred;
+   font-size: 1.2rem;
+    margin-bottom: 1rem;
+   font-weight: 500;
+}
+
+/*Quadradinhos produtos*/
+
+.top-products{
+    background-color: pink;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.container-options{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 1rem;
+}
+
+.container-options span{
+    color: white;
+    background-color: palevioletred;
+    padding: 0.7rem 3rem;
+    font-size: 1.4rem;
+    text-transform: capitalize;
+    border-radius: 2rem;
+    cursor:pointer;
+}
+
+.container-options span:hover{
+    background-color:plum ;
+    color: #fff;
+}
+
+.container-options span.active{
+    background-color:pink;
+	color: #fff;
+}
+
+/*Produtos*/
+
+.heading-1{
+    text-align: center;
+    font-weight: 500;
+    font-size: 3rem;
+    color: white;
+}
+
+.container-produtos{
+    display:grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    margin: 0px 50px 50px 50px;
+}
+
+.card-product{
+    background-color: #ffffff;
+    padding: 1.5rem 2rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    box-shadow: 0 0 2px palevioletred;
+    width: 100%;
+}
+
+.container-img{
+    position: relative;
+}
+
+.container-img img{
+    width: 100%;
+}
+
+.container-img .discount{
+    position: absolute;
+    left: 0;
+    color: #ffffff;
+    padding: 2px 1.2rem;
+    border-radius: 1rem;
+    font-size: 1.2rem;
+}
+
+.card-product:hover .discount {
+    background-color: plum;
+}
+
+.button-group{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    position: absolute;
+    top: 0;
+    right: -3rem;
+    z-index: -1;
+    transition: all 0.4s ease;
+}
+
+.button-group span{
+    border: 1px solid palevioletred;
+    padding: 0.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+
+.button-group span:hover{
+    background-color: pink;
+}
+
+.button-group span i{
+    font-size: 1.5rem;
+    color: palevioletred;
+}
+
+.button-group span:hover i{
+    color: pink;
+}
+
+.card-product:hover .button-group{
+    z-index: 0;
+    right: -1rem;
+}
+
+.content-card-product{
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(4, min-content);
+    row-gap: 1rem;
+}
+
+.stars{
+    grid-row: 1/2;
+    grid-column: 1/-1; 
+}
+
+.stars i{
+    font-size: 1.2rem;
+    color: palevioletred;
+}
+
+.content-card-product h3{
+    grid-row: 2/3; 
+    grid-column: 1/-1;
+    font-weight: 400;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    cursor: pointer ; 
+}
+
+.content-card-product h3:hover{
+    color: pink;
+}
+
+.add-cart{
+    justify-self: start;
+    border: 2px solid  palevioletred;
+    padding: 1rem;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.4s ease; 
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+
+.add-cart:hover{
+    background-color: pink;
+}
+
+.add-cart i{
+    font-size: 0.9rem;
+    color: palevioletred;
+}
+
+.add-cart:hover i{
+    color: pink;
+}
+
+.content-card-product .price{
+    justify-self: end;
+    align-self: center;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.content-card-product .price span{
+    font-size: 0.8rem;
+    font-weight: 400;
+    text-decoration: line-through; 
+    color: pink;
+    margin-left: 0.5rem;
+}
+
+/*Saiba mais video*/
+
+.video-banner {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .video-banner video {
+    position:relative;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    width: 100%;
+    
+  }
+  .video-banner .content {
+    position: relative;
+    z-index: 1;
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .video-banner .content h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 5.5em;
+    text-transform: uppercase;
+    color: #ffff;
+  }
+  .video-banner .content p {
+    font-size: 1.5em;
+    color: #ffff;
+  }
+  .video-banner .content img {
+    width: 40px;
+    height: 40px;
+  }
+
+/*Saiba mais*/
+
+.imagens{
+    text-align: center;
+}
+.blogs{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    background-color: pink;
+}
+
+.container-blogs{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+}
+
+.card-blog{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin: 40px 20px 40px 20px;
+    padding: 20px 30px 60px 30px;
+    background-color: white;
+    border-radius: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-blog .container-img{
+    border-radius: 10px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.container-img{
+    border-radius: 10px;
+}
+
+.button-group-blog{
+    position: absolute;
+    bottom: 1.2rem;
+    right: -2.5rem;
+    display: flex;
+    gap: 0.7rem;
+    z-index: -1;
+    transition: all 0.3s ease;
+}
+
+.card-blog:hover .button-group-blog{
+    z-index: 0;
+    right: 1.5rem;
+}
+
+.button-group-blog span{
+    background-color: plum;
+    padding: 1rem;
+    border-radius: 50%;
+    transition: all 0.4s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button-group-blog span i {
+    font-size: 1.3rem;
+}
+
+
+.button-group-blog span:hover i{
+   color:white
+}
+
+.button-group-blog span:hover{
+    background-color: pink;
+}
+
+.content-blog h3{
+font-size: 1.8rem;
+margin-bottom: 1.2rem;
+color: palevioletred;
+font-weight: 400;
+}
+
+.content-blog h3:hover{
+    color: pink;
+    cursor: pointer;
+}
+
+.content-blog p{
+    margin-top: 1rem;
+    font-size: 1.4rem;
+    color: palevioletred;
+}
+
+.content-blog span{
+    color: palevioletred;
+    font-size: 1.3rem;
+}
+
+.btn-read-more{
+    padding: 1rem 3rem;
+    background-color: plum;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    border-radius: 2rem;
+    margin: 2rem 0 5rem;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.btn-read-more:hover{
+    background-color: pink;
+}
+
+.banner3 {
+    background-image: url('fotos/rare\ beauty.jpg');
+    height: 700px;
+    background-size: cover;
+    right: 150px;
+    padding: 200px 650px 0px 10px;
+    background-position: center;
+}
+
+.txtbanner3 {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.txtbanner3 p {
+    color: palevioletred;
+   font-size: 1.2rem;
+    margin-bottom: 1rem;
+   font-weight: 500;
+}
+
+/*Localização*/
+
+.local{
+    display: flex;
+    gap: 2rem;
+}
+
+form{
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    background-color: #fff;
+    border-radius: 20px;
+}
+
+/*Informações em baixo*/
+
+.footer {
+	background-color: pink;
+}
+
+.container-footer {
+	display: flex;
+	flex-direction: column;
+	gap: 4rem;
+	padding: 3rem;
+	background-color: plum;
+}
+
+.menu-footer {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr) 30rem;
+	gap: 3rem;
+	justify-items: center;
+}
+
+.title-footer {
+	font-weight: 600;
+	font-size: 0.9rem;
+	text-transform: uppercase;
+}
+
+.contact-info,
+.information,
+.my-account,
+.newsletter {
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+}
+
+.contact-info ul,
+.information ul,
+.my-account ul {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+}
+
+.contact-info ul li,
+.information ul li,
+.my-account ul li {
+	list-style: none;
+	color: #fff;
+	font-size: 0.9rem;
+	font-weight: 300;
+}
+
+.information ul li a,
+.my-account ul li a {
+	text-decoration: none;
+	color: #fff;
+	font-weight: 300;
+}
+
+.information ul li a:hover,
+.my-account ul li a:hover {
+	color: pink;
+}
+
+.social-icons {
+	display: flex;
+	gap: 1.5rem;
+}
+
+.social-icons span {
+	border-radius: 50%;
+	width: 3rem;
+	height: 3rem;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.social-icons span i {
+	color: #fff;
+	font-size: 1.4rem;
+}
+
+.facebook {
+	background-color: #3b5998;
+}
+
+.twitter {
+	background-color: #00acee;
+}
+
+.youtube {
+	background-color: #c4302b;
+}
+
+.pinterest {
+	background-color: #c8232c;
+}
+
+.instagram {
+	background: linear-gradient(
+		#405de6,
+		#833ab4,
+		#c13584,
+		#e1306c,
+		#fd1d1d,
+		#f56040,
+		#fcaf45
+	);
+}
+
+.content p {
+	font-size: 0.8rem;
+	color: #fff;
+	font-weight: 300;
+}
+
+.content input {
+	outline: none;
+	background: none;
+	border: none;
+	border-bottom: 2px solid plum;
+	cursor: pointer;
+	padding: 0.5rem 0 1.2rem;
+	color: pink;
+	display: block;
+	margin-bottom: 3rem;
+	margin-top: 2rem;
+	width: 100%;
+	font-family: inherit;
+}
+
+.content input::-webkit-input-placeholder {
+	color: #eee;
+}
+
+.content button {
+	border: none;
+	background-color:pink;
+	color: #fff;
+	text-transform: uppercase;
+	padding: 1rem 3rem;
+	border-radius: 2rem;
+	font-size: 0.9rem;
+	font-family: inherit;
+	cursor: pointer;
+	font-weight: 400;
+}
+
+.content button:hover {
+	background-color:pink;
+	color: white;
+}
+
+.copyright {
+	display: flex;
+	justify-content: space-between;
+	padding-top: 2rem;
+	border-top: 1px solid pink;
+	justify-content: center;
+	align-items: center;
+}
+
+.copyright p {
+	font-weight: 400;
+	font-size: 1.1rem;
+}
+
+@media (max-width: 768px) {
+	html {
+		font-size: 55%;
+	}
+
+	.hero {
+		padding: 2rem;
+	}
+
+	.customer-support {
+		display: none;
+	}
+
+	.content-shopping-cart {
+		display: none;
+	}
+
+	.navbar {
+		padding: 1rem 2rem;
+	}
+
+	.navbar .fa-bars {
+		display: block;
+		color: #fff;
+		font-size: 3rem;
+	}
+
+	.menu {
+		display: none;
+	}
+
+	.content-banner {
+		max-width: 50rem;
+		margin: 0 auto;
+		padding: 25rem 0;
+	}
+
+	.container-features {
+		grid-template-columns: repeat(2, 1fr);
+		padding: 3rem 2rem;
+	}
+
+	.card-feature {
+		padding: 2rem;
+	}
+
+	.heading-1 {
+		font-size: 2.4rem;
+	}
+
+	.card-category {
+		height: 12rem;
+	}
+
+	.card-category p {
+		font-size: 2rem;
+		text-align: center;
+		line-height: 1;
+	}
+
+	.card-category span {
+		font-size: 1.4rem;
+	}
+
+	.container-options {
+		align-items: center;
+	}
+
+	.container-options span {
+		text-align: center;
+		padding: 1rem 2rem;
+	}
+
+	.container-products {
+		grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
+	}
+
+	.gallery {
+		grid-template-rows: repeat(2, 15rem);
+	}
+
+	.container-blogs {
+		overflow: hidden;
+		grid-template-columns: 1fr 1fr;
+
+		height: 52rem;
+	}
+
+	.menu-footer {
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	.copyright {
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		gap: 1.5rem;
+	}
+}
+
+@media (max-width: 468px) {
+	html {
+		font-size: 42.5%;
+	}
+
+	.content-banner {
+		max-width: 50rem;
+		padding: 22rem 0;
+	}
+
+	.heading-1 {
+		font-size: 2.8rem;
+	}
+
+	.card-feature {
+		flex-direction: column;
+		border-radius: 2rem;
+	}
+
+	.feature-content {
+		align-items: center;
+	}
+
+	.feature-content p {
+		font-size: 1.4rem;
+		text-align: center;
+	}
+
+	.feature-content span {
+		font-size: 1.6rem;
+		text-align: center;
+	}
+
+	.container-options span {
+		font-size: 1.8rem;
+		padding: 1rem 1.5rem;
+		font-weight: 500;
+	}
+
+	.container-products {
+		grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+		gap: 1rem;
+	}
+
+	.container-img .discount {
+		font-size: 2rem;
+	}
+
+	.content-card-product h3 {
+		font-size: 2.2rem;
+	}
+
+	.gallery {
+		grid-template-rows: repeat(2, 20rem);
+	}
+
+	.blogs {
+		padding: 2rem;
+	}
+
+	.container-blogs {
+		grid-template-columns: 1fr;
+		height: 75rem;
+	}
+
+	.content-blog h3 {
+		font-size: 2.4rem;
+	}
+
+	.content-blog span {
+		font-size: 1.8rem;
+	}
+
+	.content-blog p {
+		font-size: 2.2rem;
+	}
+
+	.btn-read-more{
+		font-size: 1.8rem;
+	}
+
+	.contact-info ul,
+	.information ul,
+	.my-account ul{
+		display: none;
+	}
+
+	.contact-info {
+		align-items: center;
+	}
+
+	.menu-footer{
+		grid-template-columns: 1fr;
+	}
+
+	.content p{
+		font-size: 1.6rem;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
